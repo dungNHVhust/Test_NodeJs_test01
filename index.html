@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="header-title" >Javascript basic</h1>
+    <script src="main.js"></script>
+    <div class = login>
+       
+        Nhap ten : <br> <input id="input" type="text" value>
+        
+        <button onclick="hello()">OK</button>
+        <div id = "loi_chao"></div>
+         <script>
+            var hello = function() {
+            var ten = document.getElementById("input").value;
+            var loi_chao = "Hello " + ten ;
+            document.getElementById("loi_chao").innerHTML = loi_chao
+            document.write(loi_chao);    
+                    }
+            var notification = function() {
+                document.getElementById("loi_chao").innerHTML = "Het gio"
+                             }
+            setTimeout(notification,3000)
+            document.getElementById("loi_chao").innerHTML = "Alo"
+        </script>
+    </div>
+    <p>Hello đây là đài tiếng nói Việt Nam </p>
+    <p></p>
+    <p></p>
+</body>
+</html>
